@@ -1,0 +1,43 @@
+# Virtual Environment
+venv/
+*.venv
+env/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Environment variables file
+.env
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.DS_Store
+
+# Temporary files
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# Test coverage reports
+.coverage
+htmlcov/
+
+# Database files (if using local SQLite for testing, etc.)
+*.sqlite3
+*.db
+
+# OS generated files
+Thumbs.db
