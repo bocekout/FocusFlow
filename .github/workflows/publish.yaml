@@ -3,9 +3,9 @@ description: Build and push Docker image to Google Artifact Registry
 
 on:
   workflow_dispatch: # You can trigger this manually to test
-#   push:
-#     branches:
-#       - main
+  push:
+    branches:
+      - main
 
 permissions:
   id-token: write   # 🔑 Required for OIDC
