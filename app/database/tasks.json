@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "description": "Review project proposal",
+        "priority": 1,
+        "estimated_time_minutes": 45,
+        "added_at": "2025-05-10T09:00:00",
+        "completed": false
+    },
+    {
+        "id": "2",
+        "description": "Draft team update email",
+        "priority": 3,
+        "estimated_time_minutes": 20,
+        "added_at": "2025-05-10T09:30:00",
+        "completed": false
+    },
+    {
+        "id": "3",
+        "description": "Plan weekend trip",
+        "priority": 5,
+        "estimated_time_minutes": 60,
+        "added_at": "2025-05-10T10:00:00",
+        "completed": false
+    },
+    {
+        "id": "4",
+        "description": "Research new tooling options",
+        "priority": 2,
+        "estimated_time_minutes": 120,
+        "added_at": "2025-05-10T11:00:00",
+        "completed": false
+    },
+    {
+        "id": "5",
+        "description": "Quick check on urgent emails",
+        "priority": 1,
+        "estimated_time_minutes": 10,
+        "added_at": "2025-05-10T11:30:00",
+        "completed": false
+    }
+]
