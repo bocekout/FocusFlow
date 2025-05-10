@@ -1,0 +1,30 @@
+name: Verify GCloud Auth
+description: Verify Google Cloud authentication using OIDC
+
+on:
+  workflow_dispatch: # You can trigger this manually to test
+
+permissions:
+  id-token: write   # 🔑 Required for OIDC
+  contents: read    # 👀 Required for actions/checkout
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Authenticate to Google Cloud via OIDC
+        uses: google-github-actions/auth@v1
+        with:
+          token_format: "access_token"
+          workload_identity_provider: "projects/466920785800/locations/global/workloadIdentityPools/github-pool/providers/github"
+          service_account: "github-actions@carbide-network-454120-i8.iam.gserviceaccount.com"
+
+      - name: Verify gcloud auth
+        run: gcloud auth list
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker us-central1-docker.pkg.dev
