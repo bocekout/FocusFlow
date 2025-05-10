@@ -21,7 +21,7 @@ jobs:
         with:
           token_format: "access_token"
           workload_identity_provider: "projects/466920785800/locations/global/workloadIdentityPools/github-pool/providers/github"
-          service_account: "github-actions@carbide-network-454120-i8.iam.gserviceaccount.com"
+          service_account: "github-actions-publisher@carbide-network-454120-i8.iam.gserviceaccount.com"
 
       - name: Verify gcloud auth
         run: gcloud auth list
