@@ -38,3 +38,13 @@ jobs:
           IMAGE_URI="us-central1-docker.pkg.dev/carbide-network-454120-i8/focusflow/flowimage:latest"
           docker build -t $IMAGE_URI .
           docker push $IMAGE_URI
+
+      - name: Deploy to Cloud Run
+        run: |
+          IMAGE_URI="us-central1-docker.pkg.dev/carbide-network-454120-i8/focusflow/flowimage:latest"
+          gcloud run deploy flowimage \
+            --image $IMAGE_URI \
+            --region us-central1 \
+            --platform managed \
+            --allow-unauthenticated \
+            --project carbide-network-454120-i8
