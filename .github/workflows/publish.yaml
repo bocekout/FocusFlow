@@ -1,5 +1,5 @@
-name: Verify GCloud Auth
-description: Verify Google Cloud authentication using OIDC
+name: Build & Push Docker Image
+description: Build and push Docker image to Google Artifact Registry
 
 on:
   workflow_dispatch: # You can trigger this manually to test
